@@ -5,9 +5,15 @@
   "main": "bar.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "foo":"echo 'fizz buzz'",
-    "bar":"echo 'bar'"
+    "webpack": "./node_modules/webpack/bin/webpack.js",
+    "start:dev": "npm run webpack -- -w & http-server -c-1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "webpack": "^1.14.0"
+  }
 }
